@@ -1,0 +1,19 @@
+#!/bin/sh
+WD="$(dirname "$0")"
+source $WD/config
+
+if [ -z "$SHX_CFG" ] 
+then
+else
+  # git commands
+  if [ $(($SHX_CFG & $SHX_CFG_GIT)) -ge 0 ]
+  then
+	  alias xgst="git status"
+  fi
+
+  # take - create a folder and cd into it
+  function xtake () {
+	  mkdir -p $1
+	  cd $1
+  }
+fi
