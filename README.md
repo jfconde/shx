@@ -1,2 +1,2 @@
 # shx
-UNIX (Linux / OS X) Shell Extensions (shx)
+My shell customization config and utilities.
